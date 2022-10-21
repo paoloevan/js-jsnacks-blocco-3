@@ -61,5 +61,11 @@ const cars = [
     }
 ]
 
-const benzina = cars.filter(alimentazione => alimentazione == 'benzina');
+const benzina = cars.filter(car => car.alimentazione == 'benzina');
 console.log(benzina);
+
+const diesel = cars.filter(car => car.alimentazione == 'diesel');
+console.log(diesel);
+
+const other = cars.filter(car => car.alimentazione !== 'benzina' && car.alimentazione !== 'diesel');
+console.log(other);
