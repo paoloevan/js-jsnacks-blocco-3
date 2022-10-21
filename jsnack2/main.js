@@ -10,13 +10,14 @@ const myArray = [
     'Paperino'
 ]
 
-const myNewArray = myArray.map(myString => {
+myArray.forEach(myString => {
     console.log(myString);
     //trasformo stringa in array
     let singleArray = myString.split('')
     console.log(singleArray);
     //ciclo dentro la nuova array
-    singleArray.forEach(caracter => {
+    let myNewArray = singleArray.map(caracter => {
+        
     });
     //verifico se il carattere è maiuscolo
 
